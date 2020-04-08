@@ -7,4 +7,9 @@ class Anagram
     @word = word
   end
 
+  def match(array_of_words)
+    array_of_words.select do|element|(@word.split("").sort)==
+      (elements.split("").sort)
+    end
+  end
 end
